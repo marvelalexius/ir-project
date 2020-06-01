@@ -13,11 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::view('/{path?}', 'search')->where('path', '[*]')->name('react');
 
 Auth::routes();
 
-Route::resource('journals', 'JournalController');
+Route::resource('journals', 'JournalController')->middleware('auth');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'SearchController@index')->name('search');
