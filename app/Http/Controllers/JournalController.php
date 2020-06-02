@@ -77,7 +77,7 @@ class JournalController extends Controller
      */
     public function edit(Journal $journal)
     {
-        return view('journal.form', compact('journal'));
+        return view('journals.form', compact('journal'));
     }
 
     /**
