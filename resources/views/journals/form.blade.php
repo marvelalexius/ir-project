@@ -37,17 +37,15 @@
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Journal abstract</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="abstract">
-                        {{ @$journal->abstract }}
-                      </textarea>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="abstract">{{ $journal->abstract }}</textarea>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Journal keywords</label>
-                      <input type="text" name="keywords" id="" placeholder="Enter keywords" class="form-control" value="{{ @$journal->price }}">
+                      <input type="text" name="keywords" id="" placeholder="Enter keywords" class="form-control" value="{{ @$journal->keywords }}">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Journal authors</label>
-                      <input type="text" name="authors" id="" placeholder="Enter authors" class="form-control" value="{{ @$journal->price }}">
+                      <input type="text" name="authors" id="" placeholder="Enter authors" class="form-control" value="{{ @$journal->authors }}">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
