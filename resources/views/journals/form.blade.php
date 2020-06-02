@@ -37,7 +37,7 @@
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Journal abstract</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="abstract">{{ $journal->abstract }}</textarea>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="abstract">{{ @$journal->abstract }}</textarea>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Journal keywords</label>
